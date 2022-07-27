@@ -3,7 +3,7 @@ from django import pandas as pd
 from django import numpy as np
 
 # Create your views here.
-
+# this code is to be continued 
 df1=pd.read_excel('sheet1.xlsx')
 df2=pd.read_excel('sheet2.xlsx')
 df1.equals(df2)
