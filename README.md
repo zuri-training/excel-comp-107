@@ -10,14 +10,14 @@ When your two files have been uploaded:
 
 At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be highlighted and our system will save a copy of their highlighted excel file to the database, which they can download at a later date or immediately. 
 
-# 2. Remove duplicates duplicates, return single file (Clean file): 
+# 2. Remove duplicates, return single file (Clean file): 
 
 At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be removed and our system will save a copy of their clean excel file to the database, which they can download at a later date or immediately. 
 
-# 3. Highlight duplicates duplicates, return two files (Original and highlighted files): 
+# 3. Highlight duplicates, return two files (Original and highlighted files): 
 
 At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be highlighted and our system will save a copy of their highlighted and original excel files to the database, which they can download at a later date or immediately. 
 
-# 4. Remove duplicates duplicates, return two files (Clean and highlighted files): 
+# 4. Remove  duplicates, return two files (Clean and highlighted files): 
 
 At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be removed and our system will save a copy of their highlighted and original excel files to the database, which they can download at a later date or immediately. 
