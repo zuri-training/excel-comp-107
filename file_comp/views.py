@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from django import pandas as pd
-from django import numpy as np
+import pandas as pd
+import numpy as np
 
 # Create your views here.
 # this code is to be continued 
-df1=pd.read_excel('sheet1.xlsx')
-df2=pd.read_excel('sheet2.xlsx')
+# add comments here
+df1=pd.read_excel('test1.xlsx')
+df2=pd.read_excel('test2.xlsx')
 df1.equals(df2)
 comparison_values = df1.values == df2.values
 print (comparison_values)
