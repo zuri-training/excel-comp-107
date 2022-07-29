@@ -1,6 +1,8 @@
 from django.shortcuts import render
 import pandas as pd
 import numpy as np
+import os
+import csv
 
 # Create your views here.
 # this code is to be continued 
@@ -9,6 +11,9 @@ df1=pd.read_excel('test1.xlsx')
 df2=pd.read_excel('test2.xlsx')
 df1.equals(df2)
 comparison_values = df1.values == df2.values
+# open('test1.xlsx','r')
+# open('test.xlsx','r')
+# data = pd.read_excel('C:\Temp\data.xlsx')
 print (comparison_values)
 
 rows,cols=np.where(comparison_values==False)
