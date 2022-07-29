@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('django-insecure-6sbg+#h(vko5y)+3h-9_o7w%*w9xn*b)&7$*awji)v=x0c_qcr')
+SECRET_KEY = os.getenv('SECRET_KEY')
 # social auth configs for github
 SOCIAL_AUTH_GITHUB_KEY = str(os.getenv('GITHUB_KEY'))
 SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv('GITHUB_SECRET'))
