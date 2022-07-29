@@ -13,17 +13,17 @@ def has_change(row):
         return "N"
  
 # Read in both excel files
-df1 = pd.read_excel('Desktop/Modele_Tiers_Exemple.xlsx', 'tiersM-1', na_values=['NA'])
-df2 = pd.read_excel('Desktop/Modele_Tiers_Exemple.xlsx', 'tiersM', na_values=['NA'])
+dftest1 = pd.read_excel('files/test1.xlsx', na_values=['NA'])
+dftest2 = pd.read_excel('files/test2.xlsx',  na_values=['NA'])
  
 # Make sure we order by account number so the comparisons work
-df1.sort_values(by=['Radical'])
-df1=df1.reindex()
-df2.sort_values(by=['Radical'])
-df2=df2.reindex()
+dftest1.sort_values(by=['Radical'])
+dftest1=dftest1.reindex()
+dftest2.sort_values(by=['Radical'])
+dftest2=dftest2.reindex()
  
 # Create a panel of the two dataframes
-diff_panel = pd.Panel(dict(df1=df1,df2=df2))
+diff_panel = pd.Panel(dict(dftest1=dftest1,dftest2=dftest2))
  
 #Apply the diff function
 diff_output = diff_panel.apply(report_diff, axis=0)
@@ -32,5 +32,4 @@ diff_output = diff_panel.apply(report_diff, axis=0)
 diff_output['has_change'] = diff_output.apply(has_change, axis=1)
  
 #Save the changes to excel but only include the columns we care about
-diff_output[(diff_output.has_change == 'Y')].to_excel('Desktop/Resultats.xlsx',index=False,columns=["Radical",
-                                                      " Name","Parent","Trigram","Country","GPC App Settings", "Type"]) 
+diff_output[(diff_output.has_change == 'Y')].to_excel('files/test1.xlsx',index=False,columns=["Radical"]) 
