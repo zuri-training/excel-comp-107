@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="mainLogin">
+      <div class="blur">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBwgHBwgHBwcHBw0HBwcHBw8ICQcNFREWFhURExMYHSggGBoxJxMTITEhJSkrLi4uFx8zODMtNygtOjcBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQIDBAUGB//EAB4QAQEAAwEAAwEBAAAAAAAAAAABAgMRYQQTFBJR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOj+E/W65gqawcX0j6PHoY6fGmOjwHl/m8P8vj1sfj+NMfjeA8X8nh/k8e5Pi+H+XwHhz4ni58Xx7f5fDnxfAePh8Xxvh8bx6mPxvGmPx/Aedh8fx0YaPHdjoa46AceGnxvhp8dWOlthpBzYam+Gpvjqa46wY4a2+GDTHW1xwBnji1xxVMGkxBMi5BIuQC4cPh8AQxDAjBgRgAAYAgYAgYAgYB+YY4NcdTTXg6MNYMsNXjbHR4316nThq8ByYaPG2Px/HZhp8b4avAcE+P4qfH8ejNPipp8B5v5/Dnx/Hp/V4Pqn+A82fH8VNHj0fqn+H9U/wHBNPjTHV47Jr8VNc/wHJNTTHW6Zr8VMPAYTW0xwazHxUxBnMF44rmK5ARMVSK4fATw5FGBcHFAC4ZgEgwAAMAAYEDAEDAEDAPz7Vg69WtnpxdmrEFa9bq16i14urXiBYam+GpWGLfDEGU1KmpvMVTEHP9Q+p0/yOA5vqH1ujg4DD6z/AIbcLgMv4P8AlrwcBn/J/wAr4YImKuGYJ4OHw+ARgwAMARgAQMARgAAYAAAADAEDMHw2mO7THHqjt0g6teLq1xz63TrBthI2wjLFrjQaSKkTKqAfC4OmBcLhgC4OGQFwcMgAAAGQAwR9AwXR0FAjAAAAAAAAAAADBGAMgBgAHxWp2anHrdeoHXhXTrrkwrfCg68a0xrnxrXGg3lVKylVKC+n1HT6CyLoAwRgCAAgCAwQBRAAD6kAvo6np9BQLoBUAgAwAAIwBAADBGAMgD4vW6ddc2DowB04VvhXNhW2FB041rjXPjWmNB0SrlYStJQayqZyqlBRpMDNJgZAAKQIACAH0dIugrpdT0dBfR1HT6DSGiVQLhpigVAIABGAIjAEAAMEAfHYxtgzxjXGA1xbYMsWuMBri1xrLFeINpVxli0xBpKqVEOA0lNEVAUC6OgoJ6fQBDpdAUh0ugCHS6A6Ol0ugrp9R0+g0lXKylXKDSLjONICoZQwBGAIlEBAyAgZA+TxjTGDGNMYCsY1xiMY1xgKkXCkXIB4tMURpiCocIwOKiYcAx0qXQV0+o6fQO0ulaXQPpdLqegrpdT0ugfS6XS6C+n1HT6DSVeNZSrxoNpVxlGkBcUiKgGCAGCAAEABAA+cxxaY4qmK8cQLGNMYJiuQBIqQcVIByKhRcAGABmQAUhSoDp9T0dA7StK0rQHS6VpdA+l0ul0D6XS6XQXKfWcqug0lXjWUq8aDaVpMmMqpQbSqlZSrlBYT0dBQqejoGCAGQIHkzFcxXMVTEEyKkVMVSAnh8Vw+AmRUPhyAQMgIAgFKilQKjpUgO1NotTaB2laVqbQV0up6XQV0ul0ugqVXWcpyg1lXKylVKDaVcrGVcoNZVyspVSg06fUdPoL6Op6OgZpMDBAH/9k="
+        />
+      </div>
+      <div class="logIn">
+        <form>
+          <div class="head">
+            <h2>Log In</h2>
+          </div>
+          <p class="email">Email</p>
+          <input type="email" class="emailInput" placeholder="Email" />
+          <p class="pass">Password</p>
+          <input type="password" class="passInput" placeholder="Password" />
+          <p>
+            <button type="submit" class="inputButton" value="Login">
+              Log in
+            </button>
+          </p>
+          <div class="remember">
+            <div class="check">
+              <input class="box" type="checkbox" /><span class="me"
+                >Remember Me</span
+              >
+            </div>
+            <a class="#" href="#">Forgot password?</a>
+          </div>
+          <div class="icon">
+            <p>Or log in with</p>
+            <div class="loginwith">
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-apple"></i></a>
+            </div>
+          </div>
+          <div class="newUser">
+            <a href="signup.html">New user? Sign in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript"></script>
+  </body>
+</html>
