@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  gap: 70px;
+  width: 95%;
+}
+
+nav {
+  margin-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+
+  color: #424a68;
+}
+
+.signup {
+  width: 150px;
+  height: 47px;
+  background: hsl(240, 53%, 46%);
+  border-radius: 5px;
+  padding: 14px 15px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  color: #ffffff;
+  border: #ffffff solid 1px;
+}
+
+.login {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  /* Foundation/primary/primary-700 */
+
+  color: #3737b5;
+  border: 1px solid #3737b5;
+  border-radius: 5px;
+  width: 150px;
+  height: 47px;
+}
+
+header h3 {
+  /* H/2 */
+
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+
+  color: #1f1f1f;
+}
+
+header span {
+  color: rgba(42, 42, 140, 1);
+}
+
+.container1 {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 125px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 150%;
+  /* or 72px */
+
+  color: #1f1f1f;
+}
+.container1 span {
+  color: rgba(8, 216, 105, 1);
+}
+
+.make {
+  margin-top: 77px;
+}
+
+h3 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+
+  text-align: center;
+
+  color: #1f1f1f;
+}
+
+.container3 {
+  display: flex;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  /* or 45px */
+  margin-top: 20px;
+
+  color: #1f1f1f;
+  width: 95%;
+}
+
+.container3 span {
+  color: rgba(8, 216, 105, 1);
+}
+
+.container3 p {
+  margin-top: 141px;
+}
+
+.container4 {
+  display: flex;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+  gap: 1em;
+  justify-content: center;
+  
+
+  text-align: center;
+  margin: auto;
+  width: 95%;
+}
+
+.learn {
+  border: 1px solid #058440;
+  border-radius: 5px;
+  width: 150px;
+  height: 47px;
+  padding: 14px 15px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+
+  /* Foundation /Secondary/S500 */
+
+  color: #058440;
+  margin-left: 45%;
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  background: #20206b;
+  gap: 70px;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+footer h3 {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  text-align: left;
+  color: #1f1f1f;
+  margin-bottom: 1em;
+}
+footer span {
+  color: rgba(8, 216, 105, 1);
+}
+footer p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 1em;
+  /* or 26px */
+
+  color: #ffffff;
+}
+
+.email {
+  border: 1px solid #ffffff;
+  /* Numb shadow effect */
+
+  height: 42px;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 5px 0px 0px 5px;
+  padding: 12px;
+  background: transparent;
+  font: "Lato";
+  margin-bottom: 200px;
+}
+
+.fsignup {
+  border: 1px solid #ffffff;
+  border-radius: 0px 5px 5px 0px;
+  width: 150px;
+  height: 42px;
+  padding: 14px 15px;
+  background: transparent;
+  color: #ffffff;
+  font: "Lato";
+}
+
+footer h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+  margin-bottom: 10px;
+
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  /* margin: 1em; */
+  /* padding: 1em; */
+  font-family: "Lato";
+  color: #ffffff;
+  line-height: 200%;
+  font-size: 16px;
+}
+
+small {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  /* or 19px */
+
+  color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+  background: transparent;
+}
+
+.signup:hover {
+  background: hsl(240, 43%, 66%);
+}
