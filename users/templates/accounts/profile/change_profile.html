@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+
+
+{% block content %}
+
+    <h4>Change profile</h4>
+
+    <form method="post">
+
+        {% csrf_token %}
+        
+        <button class="btn btn-success">Change</button>
+
+    </form>
+
+{% endblock %}

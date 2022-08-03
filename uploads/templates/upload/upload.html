@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block content %}
+
+<h4 style="align-items: center">Upload First File</h4>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="input-group">
+    <div class="custom-file">
+      <input
+        type="file"
+        class="custom-file-input"
+        id="uploadFile1"
+        aria-describedby="uploadFile1"
+        name="file1"
+      />
+      <label class="custom-file-label" for="uploadFile1">Choose file</label>
+    </div>
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="submit" id="uploadFile1">
+        Upload
+      </button>
+    </div>
+  </div>
+  {% if file1_url %}
+  <p>Uploaded file: <a href="{{ file1_url }}">{{ file1_url }}</a></p>
+  {% endif %}
+  <br />
+  <h4 style="align-items: center">Upload Second File</h4>
+  <div class="input-group">
+    <div class="custom-file">
+      <input
+        type="file"
+        class="custom-file-input"
+        id="uploadFile2"
+        aria-describedby="uploadFile2"
+        name="file2"
+      />
+      <label class="custom-file-label" for="uploadFile2">Choose file</label>
+    </div>
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="submit" id="uploadFile2">
+        Upload
+      </button>
+    </div>
+  </div>
+  <br />
+  <div style="text-align: center">
+    <button type="submit" class="btn btn-primary btn-lg">Compare</button>
+  </div>
+  >
+</form>
+{% endblock %}

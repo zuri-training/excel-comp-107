@@ -6,7 +6,6 @@
     <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Home</title>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'excel/style.css' %}">
     <link
       href="https://fonts.googleapis.com/css?family=Sora"
       rel="stylesheet"
@@ -19,6 +18,11 @@
       src="https://kit.fontawesome.com/5d9d54dcf9.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'excel/style.css' %}"
+    />
   </head>
   <body>
     <header>
@@ -29,8 +33,12 @@
         <a href="" class="testimonial">Testimonials</a>
         <a href="" class="contactus">Contact Us</a>
       </nav>
-      <a href=""><button class="signup">Sign Up</button></a>
-      <a href=""><button class="login">Log In</button></a>
+      <a href="{% url 'accounts:sign_up' %}"
+        ><button class="signup">Sign Up</button></a
+      >
+      <a href="{% url 'accounts:log_in' %}"
+        ><button class="login">Log In</button></a
+      >
     </header>
     <main>
       <div class="container1">
@@ -41,19 +49,19 @@
           </p>
         </div>
         <div>
-            {% load static %}
           <img src="{% static 'excel/images/pana.svg' %}" alt="Pana Image" />
         </div>
       </div>
+
       <div class="container2">
-        <img src="images/What we offer Carousel.svg" alt="" />
+        <img src="{% static 'excel/images/WhatweofferCarousel.svg' %}" alt="" />
         <img src="images/Vector.svg" alt="" class="vector" />
       </div>
       <div style="margin-top: 130px">
         <h3>What we offer</h3>
         <div class="container3">
           <div>
-            <img src="images/cuate.svg" alt="" />
+            <img src="{% static 'excel/images/cuate.svg' %}" alt="" />
           </div>
           <div>
             <p>
@@ -63,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div style="margin-top: 200px; justify-content: center;">
+      <div style="margin-top: 200px; justify-content: center">
         <h3>See what others think</h3>
         <div class="container4">
           <div>
