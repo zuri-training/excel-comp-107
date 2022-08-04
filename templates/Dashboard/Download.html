@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dnowload</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    
+</head>
+<body>
+    <div class="container">
+        <!---topbar-------------------------------------------------------->
+        <div class="topbar">
+           
+            <!--username-->
+            <div class="user">
+                <h3 class="username">User:John</h1><!---username here-->
+
+            </div>
+            
+            <!--User image-->
+            <div class="user">
+                <img src="profile pic.jpg" width="40px" height="40px" >
+
+            </div>
+
+        </div>
+        <!--sidebar---------------------------------------------------------->
+       
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logoImg"> <img src="logoimage.png"  width="80px" height="80px" ></div>
+                <h2>LOGO</h2>
+                
+
+            </div>
+            <ul>
+                <li>
+                    <a href="Dashboard.html"> 
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Download.html"> 
+                        <i class="fas fa-download"></i>
+                        <div>Dnowload</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html"> 
+                        <i class="fas fa-address-card"></i>
+                        <div>Profile</div>
+                    </a>
+                </li>
+                <li class="Edit Profile">
+                    <a href="User pic.html"> 
+                        <i class="fas fa-user"></i>
+                        <div>User Pic</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="FQA.html"> 
+                        <i class="fas fa-question-circle"></i>
+                        <div>FAQ</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html"> 
+                        <i class="fas fa-sign-out-alt"></i>
+                        <div>Logout</div>
+                    </a>
+                </li>
+            
+                <li class="setting">
+                    <a href="Setting.html"> 
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <div>Setting</div>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+       
+        <!-----main------------------------------------------------------------->
+      
+        <div class="main">
+            <!--cards-->
+            <div class="cards">
+                <div class="userData">
+                  <!--content of card for user-->  
+                    <div class="User-content">
+                        <div class="Number"> Donwnloads</div>
+                        <div class="CardName">1254844</div> <!----django dnowload upload go here-->
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-download"></i>
+                    </div>
+
+                </div>
+                <!-- ----------------->
+
+                <div class="userData">
+                    <!--content of card for user-->  
+                      <div class="User-content">
+                          <div class="Number">Saved file</div>
+                          <div class="CardName">1452</div> 
+                      </div>
+                      <div class="icon-box">
+                          <i class='fas fa-save'></i>
+                      </div>
+  
+                </div>
+
+                  <!-------------------->
+                  <div class="userData">
+                    <!--content of card for user-->  
+                      <div class="User-content">
+                          <div class="Number">FAQ</div>
+                          <div class="CardName"></div> 
+                      </div>
+                      <div class="icon-box">
+                          <i class="fas fa-question-circle"></i>
+                      </div>
+                    </div>
+                    <!--------------------->
+                    
+
+            </div>
+         <!--Upload and comparison of file herer ----------------------------------------------->   
+            <div class="contents">
+                <div class="Upload">
+                    <h1>Saved File</h1>
+                    <table width="100%" >
+                        
+                        <tr>
+                            <th>Name of File</th>
+                            <th>Date saved</th>
+                            <th>download</th>
+                            
+
+                        </tr>
+                       
+                    
+                        <tr>
+                            <td> school work </td>
+                            <td> 2/7/2022</td>
+                            <td>
+                             <a href="#">  <!-----dnowload  link here  ------>      
+                            <button type="button" class="button">
+                                <span class="buttontext">Download</span>
+                                
+                                <span class="buttonicon">
+                                <ion-icon name="download"></ion-icon></span>
+                             </button>
+                             </a>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td> school work </td>
+                            <td> 2/7/2022</td>
+                            <td> 
+                                <a href="#">   <!-------dnowload link here------>
+                                <button type="button" class="button">
+                                   <span class="buttontext">Download</span>
+                                   
+                                   <span class="buttonicon">
+                                   <ion-icon name="download"></ion-icon></span>
+                                </button>
+                                </a>
+                            </td>
+                            
+                        </tr>
+                   
+                    </table>
+                </div>
+                <!--Recent compared-->
+                <div class="Upload">
+                    <h1>Recent compared files</h1>
+                    <table width="100%" >
+                        
+                        <tr>
+                            <th>Name of File</th>
+                            <th>Date of upload</th>
+                            <th>Download</th>
+                            
+
+                        </tr>
+                       
+                    
+                        <tr>
+                            <td> school work </td>
+                            <td> 2/7/2022</td>
+                            <td> 
+                            <a href="#">  <!---------dnowload  here ---------->
+                            <button type="button" class="button3">
+                                <span class="buttontext2">Download</span>
+                                
+                                <span class="buttonicon2">
+                                <ion-icon name="download"></ion-icon></span>
+                             </button>
+                            </a>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td> school work </td>
+                            <td> 2/7/2022</td>
+                            <td> 
+                                <a href="#"> <!-----------dnowload   here ----->
+                                <button type="button" class="button3">
+                                   <span class="buttontext2">Download</span>
+                                   
+                                   <span class="buttonicon2">
+                                   <ion-icon name="download"></ion-icon></span>
+                                </button>
+                                </a>
+                            </td>
+                            
+                        </tr>
+                   
+                    </table>
+                </div>
+
+            </div>
+            <div class="footer">
+
+                <p>Copyrite 2022 @ zuriteam proj_team_107</p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
