@@ -1,0 +1,27 @@
+{% extends "config/header.html" %}
+{% load crispy_forms_tags %}
+
+
+
+{% block content %}
+
+    <h4>Resend an activation code}</h4>
+
+    <form method="post">
+
+        {% csrf_token %}
+        
+
+        <button class="btn btn-primary">Next</button>
+
+    </form>
+
+    <hr>
+
+    <ul>
+        <li>
+            <a href="{% url 'users:log_in' %}">Log in</a>
+        </li>
+    </ul>
+
+{% endblock %}
