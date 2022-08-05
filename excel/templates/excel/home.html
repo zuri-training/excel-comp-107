@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Home</title>
-    {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'excel/style.css' %}">
     <link
       href="https://fonts.googleapis.com/css?family=Sora"
@@ -29,8 +29,8 @@
         <a href="" class="testimonial">Testimonials</a>
         <a href="" class="contactus">Contact Us</a>
       </nav>
-      <a href=""><button class="signup">Sign Up</button></a>
-      <a href=""><button class="login">Log In</button></a>
+      <a href="{% url 'users:sign_up' %}"><button class="signup">Sign Up</button></a>
+      <a href="{% url 'users:log_in' %}"><button class="login">Log In</button></a>
     </header>
     <main>
       <div class="container1">
@@ -41,19 +41,18 @@
           </p>
         </div>
         <div>
-            {% load static %}
           <img src="{% static 'excel/images/pana.svg' %}" alt="Pana Image" />
         </div>
       </div>
       <div class="container2">
-        <img src="images/What we offer Carousel.svg" alt="" />
+        <img src="{% static 'excel/images/What_we_offer_Carousel.svg' %}" alt="" />
         <img src="images/Vector.svg" alt="" class="vector" />
       </div>
       <div style="margin-top: 130px">
         <h3>What we offer</h3>
         <div class="container3">
           <div>
-            <img src="images/cuate.svg" alt="" />
+            <img src="{% static 'excel/images/cuate.svg' %}" alt="" />
           </div>
           <div>
             <p>

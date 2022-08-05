@@ -1,0 +1,17 @@
+{% extends "config/header.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    <h4> Change email</h4>
+
+    <form method="post">
+
+        {% csrf_token %}
+        
+
+        <button class="btn btn-success">Change</button>
+
+    </form>
+
+{% endblock %}
