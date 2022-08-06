@@ -27,3 +27,4 @@ Links:
 2. Figma link(user flow): https://www.figma.com/file/CEOCYFi1LPAufi9Sj5CFVv
 3. Backend user flow: https://app.diagrams.net/#G10kwXexcAjVENfmuoewerExs9MFTi6OSw
 4. Project documentation: https://docs.google.com/document/d/1cao2oOZOhMfBcNGChsFdsedSkiK7UhTcuZX0ydZbs98/edit
+5. Designers documentation: https://docs.google.com/document/d/1X1CWXttRu7AUq0fXzLrN-UTQynW6rU4SGypaAc1UE7Y/edit?usp=drivesdk
