@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'excel',
     'users',
+    'upload',
     'crispy_forms',
 ]
 

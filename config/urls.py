@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('excel/', include('excel.urls')),
     path('users/', include('users.urls')),
-    
+    path('upload/', include('upload.urls')),  
 ]
