@@ -1,4 +1,4 @@
-Assigned task - FILE COMPARISON LOGIC(backend)- for comparing 2 excel files for duplicates then highlight duplicates and return the file
+Assigned task - FILE COMPARISON LOGIC(backend)- for comparing 2 excel files for duplicates then highlight duplicates and return the file -https://github.com/zuri-training/excel-comp-107/tree/file-comparison-logic
 
 
 Checking the final figma link,  noting down the pages and track who has been working and how far, then report to the team lead  
