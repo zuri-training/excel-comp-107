@@ -4,7 +4,9 @@ Assigned task - FILE COMPARISON LOGIC(backend)- for comparing 2 excel files for 
 Checking the final figma link,  noting down the pages and track who has been working and how far, then report to the team lead  
 
 
-Contributed to the project documentaion – provided/contributed the understanding of the project what its supposed to do , which libraries to use and shared with the team, researched on how to solve the problem, then provided a number of links on how we can develop our solution and links for projects that solve a similar problem as ours for the team to go through .
+Contributed to the project documentaion – provided/contributed to the understanding of the project what its supposed to do , which libraries to use and shared with the team, researched on how to solve the problem, then provided a number of links on how we can develop our solution and links for projects that solve a similar problem as ours for the team to go through - https://docs.google.com/document/d/1dzBQhmqBwyPgaz7avatQaXUZnNNE-qV8WjkN54i5Alc/edit,
+https://docs.google.com/document/d/1cao2oOZOhMfBcNGChsFdsedSkiK7UhTcuZX0ydZbs98/edit
+
 
 
 Acampanied  team lead as he was recording the first video presantation for submission
