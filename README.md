@@ -1,29 +1,20 @@
-# file-comp-107
-
-This is a site that can be used to compare excel files. A user can upload two excel files and different options can be selected and it is described below.
-
-How it works
-
-When your two files have been uploaded:
-
-# 1. Highlight duplicates and return a single file (Highlighted File): 
-
-At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be highlighted and our system will save a copy of their highlighted excel file to the database, which they can download at a later date or immediately. 
-
-# 2. Remove duplicates, return single file (Clean file): 
-
-At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be removed and our system will save a copy of their clean excel file to the database, which they can download at a later date or immediately. 
-
-# 3. Highlight duplicates, return two files (Original and highlighted files): 
-
-At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be highlighted and our system will save a copy of their highlighted and original excel files to the database, which they can download at a later date or immediately. 
-
-# 4. Remove  duplicates, return two files (Clean and highlighted files): 
-
-At this endpoint, when a user clicks the button that performs this action, their files will be analyzed for any duplicates, which will be removed and our system will save a copy of their highlighted and original excel files to the database, which they can download at a later date or immediately. 
-
-Links:
-1. Figma link(styles and page designs): https://www.figma.com/file/ioMqdgkN15usERQwFZ2GLs/Excel-comp?node-id=0%3A1
-2. Figma link(user flow): https://www.figma.com/file/CEOCYFi1LPAufi9Sj5CFVv
-3. Backend user flow: https://app.diagrams.net/#G10kwXexcAjVENfmuoewerExs9MFTi6OSw
-4. Project documentation: https://docs.google.com/document/d/1cao2oOZOhMfBcNGChsFdsedSkiK7UhTcuZX0ydZbs98/edit
+Assigned task - FILE COMPARISON LOGIC(backend)- for comparing 2 excel files for duplicates then highlight duplicates and return the file
+Checking the final figma link,  noting down the pages and track who has been working and how far, then report to the team lead  
+Contributed to the project documentaion – provided/contributed the understanding of the project what its supposed to do , which libraries to use and shared with the team, researched on how to solve the problem, then provided a number of links on how we can develop our solution and links for projects that solve a similar problem as ours for the team to go through .
+Acampanied  team lead as he was recording the first video presantation for submission
+Served as an  assistant team lead for developers
+Created my branch for my work, setting up my virtual environment for my app/project
+Created my app for my file comparison logic
+Set up postgresql database
+Installed python libraries needed for my task execution, libraries such as pandas, numpy, openpyxl , xlsxwriter for excel file comparison solution
+Helping out designers how to make their contributions on github too so as to submit their links to zuri
+Helping the team lead to find out if there are any devs which did not have tasks
+Managing git by pushing my changes, creating pull request, requesting for  review of work by some devs team members before merge is done
+Created a file on git to add all my contributions to my team during project phase
+Attending all team meetings and zuri classes as well as mentors classes
+Meetings with team lead to ask were l was having problems and l got help
+Interacting with mentors to ask where l was having difficulties
+Helping the team lead in responding to teams requests
+Giving project updates in meeting with the mentors when my team lead was not available
+Helping some devs to install postgresql database
+Collaborating  with my team by sharing my code when l had issues and them sharing when they too had issues
