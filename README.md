@@ -11,7 +11,7 @@ https://docs.google.com/document/d/1cao2oOZOhMfBcNGChsFdsedSkiK7UhTcuZX0ydZbs98/
 
 Acampanied  team lead as he was recording the first video presantation for submission
 
-Served as an  assistant team lead for developers
+Serving as an  assistant team lead for developers
 
 Created my branch for my work, setting up my virtual environment for my app/project
 
