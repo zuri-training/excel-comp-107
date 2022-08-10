@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Post, Document
+
+# class PostAdmin(admin.ModelAdmin):
+#     list_filter = ('documents', )
+
+admin.site.register(Post)
+admin.site.register(Document)
+

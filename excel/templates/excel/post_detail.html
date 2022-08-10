@@ -1,0 +1,18 @@
+{% extends 'filecomp/header.html' %}
+
+{% block content %}
+
+    {% for document in post.documents.all %}
+      <li>
+        <a href="{{ document.url }}">{{ post.user }}</a>
+        <small>(Document name: {{ document.file }})</small>
+      </li>
+    {% endfor %}
+
+    <form action="{% url 'compare' post.id %}" method="post">
+    {% csrf_token %}
+
+    <input type="submit" value="Compare Files">
+    </form>
+
+{% endblock %}
