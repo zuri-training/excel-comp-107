@@ -1,0 +1,25 @@
+{% extends 'filecomp/header.html' %}
+
+{% block content %}
+  <ul>
+    <li>
+      <a href="{% url 'multiple_files' %}">Multiple File Upload</a>
+    </li>
+  </ul>
+
+  <p>Uploaded files:</p>
+  <ul>
+    {% for obj in documents %}
+      <li>
+        <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
+        <small>(Uploaded at: {{ obj.uploaded_at }})</small>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="text-center">Don't have an account? <a href="{% url 'users:register' %}">Create an account</a>.</p>
+  <p class="text-center">Want to log in? <a href="{% url 'users:login' %}">Login</a>.</p>
+  <p class="text-center">Log out <a href="{% url 'users:logout' %}">Logout</a>.</p>
+  <p class="text-center">Log out <a href="{% url 'home' %}">Home</a>.</p>
+  
+{% endblock %}

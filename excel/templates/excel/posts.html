@@ -1,0 +1,12 @@
+{% extends 'filecomp/header.html' %}
+
+{% block content %}
+
+    {% for post in all_posts %}
+      <li>
+        <a href="{% url 'post-detail' post.id %}">Documents</a>
+        <small>(Post: {{ post }})</small>
+      </li>
+    {% endfor %}
+
+{% endblock %}

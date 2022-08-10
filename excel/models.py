@@ -1,23 +1,22 @@
-from __future__ import unicode_literals
-from django.conf import settings
 from django.db import models
-import uuid
-
-def uuid_default():
-    return uuid.uuid4()
+from django.conf import settings
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
-    return 'documents/'+'user_{0}/{1}/{2}'.format(instance.user.username, instance.uuid, filename)
+    return 'documents/'+'user_{0}/{1}/{2}'.format(instance.post.user.username, instance.post.id, filename)
 
 
-class SessionInstance(models.Model):
-    uuid = models.UUIDField(primary_key=True, default=uuid_default, editable=False)
-    user = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_name='session_instances', on_delete=models.CASCADE)
+class Post(models.Model):
+	user = models.ForeignKey(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+	def __str__(self) -> str:
+		  return str(self.id) + ": " + str(self.user.username)
 
 
 class Document(models.Model):
-    description = models.CharField(max_length=255, blank=True)
-    document = models.FileField(upload_to=user_directory_path)
+    file = models.FileField(upload_to=user_directory_path)
     uploaded_at = models.DateTimeField(auto_now_add=True)
-    session_instance = models.ForeignKey(SessionInstance, on_delete=models.CASCADE, related_name='files')
+    post = models.ForeignKey(Post, related_name='documents', on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return str(self.uploaded_at)
