@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Poppins;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 0.2rem;
+}
+
+.mainLogin,
+.mainSignUp {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.blur {
+  height: 100%;
+  width: 50%;
+}
+
+.blur img {
+  height: 100%;
+}
+.blur img {
+  width: 100%;
+}
+
+.logIn,
+.signup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  margin-bottom: 5px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.pass {
+  margin-top: 30px;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Poppins;
+}
+
+.emailInput,
+.passInput,
+.signUpInput {
+  width: 270px;
+  height: 35px;
+  outline: none;
+  box-shadow: 0 0 8px #ccc;
+  border: none;
+  padding: 7px;
+}
+
+.emailInput::placeholder {
+  /* Chrome/Opera/Safari */
+  opacity: 0.5;
+  font-family: Poppins;
+  font-size: 11px;
+  padding: 7px;
+}
+
+.passInput::placeholder {
+  opacity: 0.5;
+  font-family: Poppins;
+  font-size: 11px;
+}
+
+.passInput {
+  margin-bottom: 30px;
+}
+
+.inputButton {
+  width: 270px;
+  height: 50px;
+  background-color: #a2a6b4;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.inputButton {
+  color: white;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+  height: 35px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.remember a {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.me {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+span {
+  margin-left: 8px;
+}
+
+.icon {
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon p {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.loginwith {
+  margin-top: 10px;
+}
+
+.newUser {
+  margin-top: 10px;
+}
+.newUser a {
+  color: black;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.loginwith a,
+.signupWith a {
+  margin-left: 12px;
+  color: black;
+  font-size: 23px;
+}
+/* ..........Sign Up details............ */
+.signUpLabel {
+  margin-bottom: 5px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: bold;
+}
+.signUpInput {
+  margin-bottom: 20px;
+}
+.headSignUp {
+  margin-bottom: 25px;
+}
+.headSignUp h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.signUpText {
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+  line-height: 1.5rem;
+  font-weight: 600;
+  /* line-height: 0.2rem; */
+}
+.bottom-text {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+.bottom-text a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.signupWith {
+  text-align: center;
+}
+/* ........................Media Query................. */
+@media only screen and (max-width: 500px) {
+  .mainLogin,
+  .mainSignUp {
+    display: flex;
+    justify-content: center;
+  }
+  .blur {
+    display: none;
+  }
+}
