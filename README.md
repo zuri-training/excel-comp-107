@@ -23,7 +23,8 @@ Installed python libraries needed for my task execution, libraries such as panda
 
 Helping out designers how to make their contributions on github too so as to submit their links to zuri
 
-Helping the team lead to find out if there are any devs which did not have tasks
+Assigning tasks to front end developers after  reviewing the figma final design - https://www.figma.com/file/wzkIRgNQoBmgxs1L9QKjPn/Excel-comp-design-(Copy)?node-id=1%3A3
+
 
 Managing git by pushing my changes, creating pull request, requesting for  review of work by some devs team members before merge is done
 
