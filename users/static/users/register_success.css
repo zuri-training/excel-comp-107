@@ -1,0 +1,56 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+  
+body{
+    background-color: rgb(232, 233, 237);
+    text-align: center;
+    margin-top: 6%;
+}
+
+.content{
+    margin-left:450px;
+    width: 35%;
+    border-style:thin;
+    border-width:2px;
+    border-radius: 5px;
+    background:rgba(255, 255, 255, 1.0);
+}
+
+h2{
+    padding-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Sora', sans-serif;
+    
+}
+
+.mainContainer p{
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 15%;
+    margin-left: 55px;
+    width: 75%;  
+}
+
+button{
+    margin-bottom: 55%;
+    background-color: rgb(123, 129, 149);
+    box-shadow: 0 0 2px rgb(123, 129, 149);
+    color: white;
+    border-radius:5px;
+    padding:0.5rem 5rem;
+    border:thin solid rgb(123, 129, 149);
+    outline:0;
+    cursor:pointer;
+    font-size:0.8rem;
+}
+
+footer{
+margin-top: 1.5%;
+font-size:0.6rem;
+}
+footer p{
+    color: rgb(123, 129, 149);
+}
