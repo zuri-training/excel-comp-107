@@ -11,6 +11,6 @@ urlpatterns = [
 
     path('posts/<int:post_id>/compare', excel_views.compare, name='compare'),
 
-    path('multiple_files/', excel_views.FileFieldFormView.as_view(), name='multiple_files'),
+    path('multiple_files', excel_views.FileFieldFormView.as_view(), name='multiple_files'),
     
     ]
