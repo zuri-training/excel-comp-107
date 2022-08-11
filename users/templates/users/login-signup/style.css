@@ -73,6 +73,12 @@ h2 {
   border: none;
   padding: 7px;
 }
+.emailInput:hover,
+.passInput:hover,
+.signUpInput:hover {
+  /* outline: 1px solid; */
+  box-shadow: 0 0 6px #adadff;
+}
 
 .emailInput::placeholder {
   /* Chrome/Opera/Safari */
@@ -99,6 +105,7 @@ h2 {
   border: none;
   border-radius: 2px;
   box-shadow: 0 0 3px #ccc;
+  cursor: pointer;
 }
 
 .inputButton {
