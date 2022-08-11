@@ -113,6 +113,22 @@ h3 {
   color: #1f1f1f;
 }
 
+#gets{
+  background: #4646e8;
+  /* Click shadow effect */
+
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+
+  color: #ffffff;
+}
+
 .container3 {
   display: flex;
   font-family: "Lato";
@@ -145,7 +161,6 @@ h3 {
   /* or 38px */
   gap: 1em;
   justify-content: center;
-  
 
   text-align: center;
   margin: auto;
