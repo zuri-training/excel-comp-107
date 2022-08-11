@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Signup Success</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        font-family: "poppins";
+        background: url("./images/bg.png");
+        background-size: cover;
+      }
+      .main-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 35%;
+        height: 85%;
+        margin-top: 30px;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+      }
+      .text-header {
+        font-size: 19px;
+        letter-spacing: 0.3px;
+        font-family: "Poppins" S;
+        font-weight: bold;
+      }
+      .text {
+        font-size: 14px;
+        margin-top: -5px;
+      }
+      .footer {
+        display: flex;
+      }
+      button {
+        margin-top: 10px;
+        font-size: 14px;
+        width: 200px;
+        height: 40px;
+        outline: none;
+        border: 1.5px solid #adadff;
+        background: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      button:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+        transform: scale(1.2);
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        gap: 24px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .home {
+        margin-top: 12px;
+        font-size: 13px;
+        color: black;
+      }
+      @media only screen and (max-width: 500px) {
+        .main-container {
+          width: 90%;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .main-container {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <p class="text-header">Welcome</p>
+      <p class="text">
+        Lets help you compare your files with seamless features
+      </p>
+      <div class="btn">
+        <button>Continue</button>
+      </div>
+
+      <a href="#" class="home">Back to home</a>
+    </main>
+    <footer class="footer">
+      <div class="bottom">
+        <p>&copy; 2022 Excel-Comp Software</p>
+        <a href="#">| Terms</a>
+        <a href="#">| Privacy</a>
+        <a href="#">| Advertise</a>
+      </div>
+    </footer>
+  </body>
+</html>
