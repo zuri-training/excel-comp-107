@@ -100,15 +100,11 @@ h2 {
 
 .inputButton {
   width: 270px;
-  height: 50px;
-  background-color: #a2a6b4;
   border: none;
   border-radius: 2px;
   box-shadow: 0 0 3px #ccc;
   cursor: pointer;
-}
-
-.inputButton {
+  transition: all 0.5s ease;
   color: black;
   font-family: Poppins;
   font-size: 11px;
@@ -116,6 +112,9 @@ h2 {
   height: 35px;
   border: 1.5px solid #adadff;
   background: transparent;
+}
+.inputButton:hover {
+  transform: scale(1.05);
 }
 
 .remember {
@@ -198,7 +197,6 @@ span {
   font-weight: normal;
 }
 .signUpText {
-  /* font-weight: bold; */
   margin-bottom: 5px;
   line-height: 1.5rem;
   font-weight: 600;
