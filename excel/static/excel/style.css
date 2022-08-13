@@ -2,65 +2,94 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  /* box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14);
+background: rgba(70, 70, 232, 0.2);
+
+click
+box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+background: rgba(70, 70, 232, 1);
+
+ */
+}
+body {
+  background: linear-gradient(hsl(240, 100%, 96%), #ffffff);
 }
 
 header {
   display: flex;
   margin: auto;
-  margin-top: 20px;
-  gap: 70px;
+  margin-top: 1%;
+  gap: 6%;
   width: 95%;
 }
 
 nav {
   margin-top: 20px;
 }
+
 nav a {
   text-decoration: none;
   margin-left: 40px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 100%;
   line-height: 160%;
-
   color: #424a68;
 }
 
-.signup {
+.navbutton {
   width: 150px;
   height: 47px;
-  background: hsl(240, 53%, 46%);
-  border-radius: 5px;
   padding: 14px 15px;
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;
-  /* identical to box height, or 17px */
-
-  color: #ffffff;
-  border: #ffffff solid 1px;
+  border: 1px solid #4646e8;
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+.navbutton:hover {
+  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14);
+  background: rgba(70, 70, 232, 0.2);
+  border: none;
 }
 
-.login {
+.navbutton:focus {
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  background: rgba(70, 70, 232, 1);
+  border: none;
+}
+#gets {
+  background: #4646e8;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   font-family: "Sora";
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 120%;
-  /* identical to box height, or 17px */
-
-  /* Foundation/primary/primary-700 */
-
-  color: #3737b5;
-  border: 1px solid #3737b5;
-  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 16px 16px;
+  text-align: center;
+  border: none;
   width: 150px;
-  height: 47px;
+  height: 48px;
+  color: #ffffff;
+}
+hr {
+  border: 1px solid #10172d;
+  width: 30%;
+  margin: 9% 35%;
 }
 
+h3 + hr {
+  border: 1px solid #10172d;
+  width: 6%;
+  margin: 1% 47%;
+}
 header h3 {
   /* H/2 */
 
@@ -113,20 +142,22 @@ h3 {
   color: #1f1f1f;
 }
 
-#gets{
-  background: #4646e8;
-  /* Click shadow effect */
-
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+.container2 {
+  display: flex;
+  width: 95%;
   font-family: "Sora";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 160%;
-  /* identical to box height, or 26px */
+  /* or 38px */
+  align-items: center;
+  justify-content: center;
+  margin: 4% 2.5%;
 
-  color: #ffffff;
+  text-align: center;
+  gap: 4.5%;
+  color: #1f1f1f;
 }
 
 .container3 {
@@ -158,32 +189,36 @@ h3 {
   font-weight: 500;
   font-size: 24px;
   line-height: 160%;
-  /* or 38px */
-  gap: 1em;
+  
+  gap: 5%;
   justify-content: center;
+  align-items: center;
 
   text-align: center;
-  margin: auto;
+  margin: 3% 2.5% 5%;
   width: 95%;
 }
 
 .learn {
-  border: 1px solid #058440;
-  border-radius: 5px;
   width: 150px;
   height: 47px;
   padding: 14px 15px;
   font-family: "Sora";
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 120%;
   /* identical to box height, or 17px */
 
   /* Foundation /Secondary/S500 */
 
-  color: #058440;
+  color: #4646e8;
   margin-left: 45%;
+  border: 1px solid #4646e8;
+  /* Numb shadow effect */
+
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
 }
 
 footer {
@@ -225,24 +260,25 @@ footer p {
   border: 1px solid #ffffff;
   /* Numb shadow effect */
 
-  height: 42px;
+  height: 43.3px;
   box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
   border-radius: 5px 0px 0px 5px;
   padding: 12px;
   background: transparent;
   font: "Lato";
-  margin-bottom: 200px;
+  margin-bottom: 46%;
 }
 
 .fsignup {
   border: 1px solid #ffffff;
   border-radius: 0px 5px 5px 0px;
   width: 150px;
-  height: 42px;
+  height: 43.16px;
   padding: 14px 15px;
   background: transparent;
   color: #ffffff;
   font: "Lato";
+  cursor: pointer;
 }
 
 footer h4 {
@@ -257,6 +293,9 @@ footer h4 {
   color: #ffffff;
 }
 
+footer li {
+  margin-bottom: 1em;
+}
 ul {
   list-style-type: none;
   /* margin: 1em; */
