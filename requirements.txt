@@ -3,7 +3,7 @@ certifi==2022.6.15
 charset-normalizer==2.1.0
 cloudinary==1.29.0
 dj-database-url==1.0.0
-Django==4.0.6
+Django==4.0.7
 django-cloudinary-storage==0.3.0
 django-crispy-forms==1.14.0
 django-stubs==1.2.0
