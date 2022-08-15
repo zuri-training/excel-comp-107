@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'users/profilestyle.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sora"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <script src="{% static 'users/profilescript.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="controls">
+      <h3>Excel <span>Comp</span></h3>
+      <ul class="one">
+        <li>
+          <a href="{% url 'excel:dashboard' %}"><img class="image" src="{% static 'users/images/grid.svg' %}" alt="" /> Dashboard</a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="image" src="{% static 'users/images/file-text.svg' %}" alt="" /> Library</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'users:profile' %}"
+            ><button>
+              <img class="image" src="{% static 'users/images/user.svg' %}" alt="" /> Profile
+            </button></a
+          >
+        </li>
+      </ul>
+
+      <ul class="two">
+        <li>
+          <a href=""
+            ><img class="image" src="{% static 'users/images/help-circle.svg' %}" alt="" /> Support</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'users:login' %}"><img class="image" src="{% static 'users/images/log-out.svg' %}" alt="" /> Log Out</a>
+        </li>
+      </ul>
+    </section>
+    <section class="profile">
+      <div class="head">
+        <h2>Edit your profile <img src="{% static 'users/images/edit.svg' %}" alt="" /></h2>
+        <img src="{% static 'users/images/profile circle small.svg' %}" alt="" class="small" />
+      </div>
+      <img src="{% static 'users/images/profile circle.svg' %}" alt="" /><a href=""
+        ><img src="{% static 'users/images/snapshot.svg' %}" alt=""
+      /></a>
+      <form action="">
+        <div class="formflex">
+          <div>
+            <label for="Fname">First Name</label>
+            <br />
+            <input type="text" name="Fname" id="Fname" value="{{ username.username }}" />
+            <img class="image" src="{% static 'users/images/Group 11.svg' %}" alt="" />
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value="JohnDoe@gmail.com"
+            /><img class="image" src="{% static 'users/images/Group 11.svg' %}" alt="" />
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <br />
+            <input type="text" name="lname" id="lname" value="{{ username.username }}" />
+            <img class="image" src="{% static 'users/images/Group 11.svg' %}" alt="" />
+            <br />
+            <label for="password">Password</label>
+            <br />
+            <input type="password" name="password" id="password" value="{{ password.password }}"/>
+            <img class="image" src="{% static 'users/images/Group 11.svg' %}" alt="" />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Save" class="save" onclick="success()" />
+        </div>
+      </form>
+      <br />
+      <div id="sucess" class="suc">
+        <div class="sucessone"></div>
+        <div class="sucesstwo">
+          <img src="{% static 'users/images/circle.svg' %}" alt="" />
+          <p>Your changes have been made successfully</p>
+          <img
+            src="{% static 'users/images/x.svg' %}"
+            alt=""
+            onclick="this.parentElement.style.display='none'"
+            style="cursor: pointer"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

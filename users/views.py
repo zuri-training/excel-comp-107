@@ -47,3 +47,8 @@ def homepage(request):
 
 def register_success(request):
 	return render(request, 'users/register_success.html')
+
+
+# @login_required(login_url='/users/login')
+def profile(request):
+	return render(request, 'users/profile.html' )

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.controls {
+  width: 20%;
+  padding: 1em;
+  background: #e6fbf0;
+  position: relative;
+}
+
+.controls button {
+  padding: 12px 16px;
+
+  width: 150px;
+  color: #ffffff;
+  border: none;
+  font-family: "Sora";
+  /* Color style/primary/primary-600 */
+
+  background: #4646e8;
+  /* Numb shadow effect */
+
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.controls button:hover {
+  cursor: pointer;
+  background: hsl(240, 74%, 64%);
+  box-shadow: none;
+}
+
+.profile {
+  background: linear-gradient(hsl(149, 72%, 94%), hsl(240, 100%, 89%));
+  width: 80%;
+  padding: 1em;
+}
+
+.head {
+  display: flex;
+  gap: 69%;
+  /* position: relative; */
+}
+
+li {
+  list-style: none;
+  font-size: 1em;
+  line-height: 160%;
+  margin: 2em;
+}
+a {
+  text-decoration: none;
+}
+.one {
+  margin-bottom: 600px;
+}
+
+.two {
+  position: absolute;
+  bottom: 0;
+  margin-top: 400px;
+}
+.image {
+  width: 20px;
+  height: 20px;
+}
+input {
+  margin-bottom: 2em;
+  background: #ffffff;
+  border: 1px solid rgba(77, 77, 255, 0.2);
+  /* Numb shadow effect */
+
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  font-family: "Sora";
+  padding: 12px;
+  font-weight: 400;
+}
+
+.formflex {
+  display: flex;
+  gap: 20%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
+.save {
+  cursor: pointer;
+  padding: 16px;
+  font-size: 12px;
+  width: 200px;
+
+  /* Color style/primary/primary-600 */
+
+  border: 1px solid #4646e8;
+  background: transparent;
+
+  box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.save:hover {
+  border: none;
+}
+
+.button {
+  display: flex;
+  width: 60%;
+  align-content: center;
+  justify-content: center;
+}
+
+#sucess {
+  display: flex;
+  width: 50%;
+  position: fixed;
+  bottom: 5px;
+  left: 40%;
+/* display: none; */
+transition: 10s;
+}
+
+
+.sucessone {
+  width: 2%;
+  background: #14ae5c;
+  border-radius: 4px 0 0 4px;
+}
+
+.sucesstwo {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: rgba(237, 253, 244, 1);
+  border-radius: 0 4px 4px 0;
+  color: #1f1f1f;
+  display: flex;
+  padding: 1em;
+}
+
+.sucesstwo p {
+  margin-right: 2em;
+  margin-left: 1em;
+}

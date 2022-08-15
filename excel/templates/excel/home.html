@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'excel/style.css' %}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'excel/style.css' %}"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Sora"
       rel="stylesheet"
@@ -29,8 +33,12 @@
         <a href="" class="testimonial">Testimonials</a>
         <a href="" class="contactus">Contact Us</a>
       </nav>
-      <a href="{% url 'users:register' %}"><button class="signup">Sign Up</button></a>
-      <a href="{% url 'users:login' %}"><button class="login">Log In</button></a>
+      <a href="{% url 'users:register' %}"
+        ><button class="navbutton">Sign Up</button></a
+      >
+      <a href="{% url 'users:login' %}"
+        ><button class="navbutton">Log In</button></a
+      >
     </header>
     <main>
       <div class="container1">
@@ -39,17 +47,43 @@
             Make your life easier <span>compare</span> your excel file with just
             one click and save yourself the stress
           </p>
+          <a href="{% url 'users:register' %}"
+            ><button id="gets">Get Started</button></a
+          >
         </div>
         <div>
           <img src="{% static 'excel/images/pana.svg' %}" alt="Pana Image" />
         </div>
       </div>
+      <hr />
+      <h3>How it works</h3>
+      <hr />
       <div class="container2">
-        <img src="{% static 'excel/images/What_we_offer_Carousel.svg' %}" alt="" />
-        <img src="images/Vector.svg" alt="" class="vector" />
+        <div>
+          <img src="{% static 'excel/images/ellipse 5.svg' %}" alt="" />
+        </div>
+        <div>
+          <img src="{% static 'excel/images/ellipse 3.svg' %}" alt="" />
+          <p>Upload file</p>
+        </div>
+        <div>
+          <img src="{% static 'excel/images/ellipse 1.svg' %}" alt="" />
+          <p>Compare your file</p>
+        </div>
+        <div>
+          <img src="{% static 'excel/images/ellipse 2.svg' %}" alt="" />
+          <p>Download or save</p>
+        </div>
+        <div>
+          <img src="{% static 'excel/images/ellipse 4.svg' %}" alt="" />
+        </div>
       </div>
+      <a href=""
+        ><button class="learn" style="color: #08d869">Learn More</button></a
+      >
       <div style="margin-top: 130px">
         <h3>What we offer</h3>
+        <hr />
         <div class="container3">
           <div>
             <img src="{% static 'excel/images/cuate.svg' %}" alt="" />
@@ -61,35 +95,42 @@
             </p>
           </div>
         </div>
+        <hr />
       </div>
-      <div style="margin-top: 200px; justify-content: center;">
+      <div style="margin-top: 12%; justify-content: center">
         <h3>See what others think</h3>
+        <hr />
         <div class="container4">
           <div>
+            <img src="{% static 'excel/images/Ellipse 5 (2).svg' %}" alt="" />
             <p>
               Dorcas jone <br />
               Designer
             </p>
           </div>
           <div>
+            <img src="{% static 'excel/images/Ellipse 3 (2).svg' %}" alt="" />
             <p>
               Miss Tonia <br />
               Accountant
             </p>
           </div>
           <div>
+            <img src="{% static 'excel/images/Ellipse 1 (2).svg' %}" alt="" />
             <p>
               Rosemary Philip <br />
               Data analyst
             </p>
           </div>
           <div>
+            <img src="{% static 'excel/images/Ellipse 2 (2).svg' %}" alt="" />
             <p>
               Mister Isaac <br />
               Developer
             </p>
           </div>
           <div>
+            <img src="{% static 'excel/images/Ellipse 6.svg' %}" alt="" />
             <p>
               Favour smith <br />
               Human resources
@@ -111,7 +152,7 @@
             id="email"
             placeholder="Email address"
             required
-          /><input class="fsignup" type="submit" value="Sign Up" />
+          /><input class="fsignup" type="submit" value="SUBSCRIBE" />
         </form>
         <small>© 2022 Team_107. All Rights Reserved.</small>
       </div>
@@ -132,14 +173,27 @@
           <li>+234 800 000 0000</li>
           <li>Follow Us</li>
           <li>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://twitter.com/" style="margin-right: 1em"
+              ><i
+                ><img src="{% static 'excel/images/twitter.svg' %}" alt="" /></i
+            ></a>
+            <a href="https://www.instagram.com/" style="margin-right: 1em"
+              ><i
+                ><img
+                  src="{% static 'excel/images/instagram.svg' %}"
+                  alt="" /></i
+            ></a>
+            <a href="https://www.linkedin.com/"
+              ><i
+                ><img
+                  src="{% static 'excel/images/linkedin.svg' %}"
+                  alt="" /></i
+            ></a>
           </li>
         </ul>
       </div>
       <div>
-        <h4>logo</h4>
+        <h3 style="font-size: 24px">Excel-<span>comp</span></h3>
         <ul>
           <li>Lorem</li>
           <li>Lorem</li>
