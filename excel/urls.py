@@ -1,6 +1,8 @@
 from django.urls import path
 from excel import views as excel_views
 
+app_name = "excel"  
+
 urlpatterns = [
     
     path('', excel_views.home, name='home'),
