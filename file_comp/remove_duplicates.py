@@ -24,17 +24,17 @@ noDuplicates.to_excel('./files/output.xlsx', index=False, header=True)
 path = r"./files/output.xlsx"
 
 with xw.App(visible=False) as app:
-    wb = xw.Book(path)
-    ws = wb.sheets[0]
-
-    for a_cell in ws["A2:A5"].expand("down"):
-        if type(a_cell.value) in [float, int]:
-            if a_cell.value in duplicateValues.values:
-                a_cell.color = (169, 208, 142)
+    # with app.app_context():
+        wb = xw.Book(path)
+        ws = wb.sheets[0]
+        for a_cell in ws["A2:A5"].expand("down"):
+            if type(a_cell.value) in [float, int]:
+                if a_cell.value in duplicateValues.values:
+                    a_cell.color = (169, 208, 142)
             elif a_cell.value in duplicateValues.values:
                 a_cell.color = (192, 0, 0)
-    wb.save(path)
-    wb.close()
+                wb.save(path)
+                wb.close()
 
 #noDuplicates.to_excel('./files/output.xlsx', index=False, header=True)
 
